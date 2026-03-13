@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasmitha S · BSc IT Portfolio</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts (Inter + Outfit) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- hidden iframe for download trick (no flicker) -->
+    <iframe id="dummyFrame" name="dummyFrame" style="display:none;"></iframe>
+
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <span class="logo">◉ s a s m i .</span>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#internship">Internship</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <!-- profile & objective (about) -->
+        <div id="about" class="profile-grid">
+            <div class="avatar-frame">
+                <div class="avatar-placeholder">SS</div>
+            </div>
+            <div class="title-box">
+                <h1>SASMITHA S<br><span
+                        style="font-size: 1.4rem; background: none; -webkit-text-fill-color: #94a3b8;">Master of
+                        Computer Application</span></h1>
+                <div class="subhead">
+                    <span><i class="fas fa-envelope"></i> suresh19722020@gmail.com</span>
+                    <span><i class="fas fa-phone-alt"></i> +91 6381210154</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- quick contact chips & download button -->
+        <div class="contact-row">
+            <div class="quick-info">
+                <span class="chip"><i class="fas fa-map-marker-alt"></i> Sivagangai-630561</span>
+                <span class="chip"><i class="fas fa-certificate"></i> NPTEL (IIT)</span>
+                <span class="chip"><i class="fas fa-language"></i> Hindi Praveen Poorvadh</span>
+            </div>
+            <!-- download resume button (on click triggers hidden download) -->
+            <button class="download-btn" id="downloadResumeBtn"><i class="fas fa-file-pdf"></i> Download resume</button>
+        </div>
+
+        <!-- Objective / about (from resume) -->
+        <div class="objective-card">
+            <p style="font-size: 1.2rem; font-style: italic; font-weight: 300;">🎯 To become a software developer and
+                enhance my skills in programming and in IT sector. Thereby providing quality solutions to the
+                organization.</p>
+        </div>
+
+        <!-- Education + soft skills -->
+        <div id="education" class="edu-soft-row">
+            <div class="edu-box">
+                <h3 style="font-weight: 600; margin-bottom: 0.8rem;"><i class="fas fa-graduation-cap"
+                        style="margin-right: 8px;"></i>Education</h3>
+                <ul
+                    style="list-style-type: none; background: rgba(255,255,255,0.3); padding: 1.4rem 2rem; border-radius: 30px;">
+                    <li><strong>BSc Information Technology</strong> (2022-2025)<br>Dr.Umayal Ramanathan college for
+                        women - 81.1%</li>
+                    <li><strong>Higher Secondary</strong> (2022)<br>Sambaviga Higher Secondary School - 76.3%</li>
+                    <li><strong>Senior Secondary</strong> (2020)<br>OMGS Matriculation School - 81.2%</li>
+                </ul>
+            </div>
+            <div class="soft-box">
+                <h3 style="font-weight: 600; margin-bottom: 0.8rem;"><i class="fas fa-cog"></i> Soft skills</h3>
+                <div style="background: rgba(255,255,255,0.3); border-radius: 30px; padding: 1.4rem;">
+                    Effective Communication, Analytical Thinking, Problem-Solving, Leadership, Teamwork
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Qualification -->
+        <div style="margin: 2rem 0 1rem;">
+            <h3 class="section-title" style="margin-bottom: 1rem;">📜 Additional Qualification</h3>
+            <div class="skill-tag">
+                <span>Psychology of language (NPTEL IIT)</span>
+                <span>Hindi Praveen Poorvadh (8 levels)</span>
+            </div>
+        </div>
+
+        <!-- Technical skills -->
+        <div style="margin: 2rem 0 1rem;">
+            <h3 class="section-title" style="margin-bottom: 1rem;">⚙️ Technical skills</h3>
+            <div class="skill-tag">
+                <span>.Net Basics</span>
+                <span>Robotics Process Automation</span>
+                <span>Python</span>
+                <span>HTML & CSS</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
+
+        <!-- PROJECTS SECTION -->
+        <div id="projects">
+            <h2 class="section-title">📌 Projects (click card for details)</h2>
+            <div class="project-grid">
+                <div class="card" data-detail="project1">
+                    <span class="badge">web development</span>
+                    <h3>Personal Portfolio Website</h3>
+                    <p style="margin-bottom: 1rem;">HTML, CSS, JavaScript · Responsive design with modern UI/UX
+                        principles.</p>
+                    <div class="skill-tag" style="margin-top: 0.5rem;">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                    </div>
+                </div>
+                <!-- second project -->
+                <div class="card" data-detail="project2">
+                    <span class="badge">automation</span>
+                    <h3>RPA Demo Bot</h3>
+                    <p>Basic robotic process automation script for data entry automation using RPA tools.</p>
+                    <div class="skill-tag">
+                        <span>RPA</span><span>Automation</span><span>Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- INTERNSHIPS -->
+        <div id="internship">
+            <h2 class="section-title">💼 Internships (click card for details)</h2>
+            <div class="intern-grid">
+                <div class="card" data-detail="intern1">
+                    <span class="badge">futurik technologies</span>
+                    <h3>.Net Basics Internship</h3>
+                    <p><i class="fas fa-calendar-alt" style="margin-right: 6px;"></i> Learned fundamentals of C# and
+                        .NET framework.</p>
+                </div>
+                <!-- internship inside card -->
+                <div class="card" data-detail="intern2">
+                    <span class="badge">national softech</span>
+                    <h3>Robotics Process Automation</h3>
+                    <p>Explored RPA tools and automation workflows for business process automation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- personal interests -->
+        <div class="personal-row">
+            <div><span class="interest-item"><i class="fas fa-code"></i> Web Development</span></div>
+            <div><span class="interest-item"><i class="fas fa-robot"></i> Automation</span></div>
+            <div><span class="interest-item"><i class="fas fa-language"></i> Hindi Language</span></div>
+            <div><span class="interest-item"><i class="fas fa-brain"></i> Psychology</span></div>
+            <div><span class="interest-item"><i class="fas fa-puzzle-piece"></i> Problem Solving</span></div>
+        </div>
+
+        <!-- CONTACT SECTION - Simplified with only contact info -->
+        <div id="contact" class="contact-section">
+            <div class="contact-flex">
+                <div class="contact-info">
+                    <h2 style="font-size: 2rem; font-weight: 600;">Let's connect</h2>
+                    <p style="margin: 1.5rem 0; font-size: 1.1rem;"><i class="fas fa-paper-plane"></i>
+                        suresh19722020@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 6381210154</p>
+                    <p style="margin-top: 1rem;"><i class="fas fa-map-marker-alt"></i> 1-71, Vittaneri, Kalaiyar Kovil,
+                        Sivagangai-630561</p>
+                    <p style="margin-top: 1rem;">Languages: English, Tamil, Hindi</p>
+                    <div style="margin-top: 1.8rem;">
+                        <!-- LinkedIn icon placeholder -->
+                        <i class="fab fa-linkedin fa-2x clickable-icon" id="linkedinIcon"
+                            style="margin-right: 1rem; color: #1f3a60;"></i>
+                        <!-- GitHub icon placeholder -->
+                        <i class="fab fa-github fa-2x clickable-icon" id="githubIcon" style="color: #1f3a60;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            © 2025 Sasmitha S
+        </footer>
+    </div>
+
+    <!-- Toast for notification messages -->
+    <div id="liveToast" class="msg-toast">
+        <i class="fas fa-check-circle" style="margin-right: 12px; color: #7ab7e0;"></i> <span id="toastMessage">Message
+            triggered (demo)</span>
+    </div>
+
+    <!-- Modal for details popup -->
+    <div class="modal" id="detailModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2 id="modalTitle">Title</h2>
+            <p id="modalDesc">Description</p>
+            <div id="modalTags"></div>
+        </div>
+    </div>
+
+    <!-- external JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
